@@ -47,10 +47,6 @@ The GTZAN dataset is used for this classification task. It consists of 1000 audi
 - Scikit-learn
 - Librosa
 
-## Usage Example
-```bash
-jupyter notebook music_genre_classifier.ipynb
-```
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
