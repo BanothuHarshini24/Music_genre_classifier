@@ -1,13 +1,13 @@
-Here's the corrected README file:
-
----
-
 # Music Genre Classifier
 
 This repository contains a Music Genre Classifier built using the GTZAN dataset. The dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification?resource=download).
 
+## Overview
+Music Genre Classification is a fundamental task in the field of music information retrieval. This project aims to classify audio tracks into one of ten genres: Blues, Classical, Country, Disco, Hip-Hop, Jazz, Metal, Pop, Reggae, and Rock. The GTZAN dataset, with 1000 audio tracks each 30 seconds long, sampled at 22050Hz, serves as the foundation for this classifier.
+
 ## Dataset
-The GTZAN dataset is used for this classification task. It consists of 1000 audio tracks each 30 seconds long, sampled at 22050Hz, and each belonging to one of 10 genres:
+The GTZAN dataset is used for this classification task. It consists of 1000 audio tracks, each 30 seconds long, sampled at 22050Hz, and each belonging to one of the following genres:
+
 - Blues
 - Classical
 - Country
@@ -20,24 +20,39 @@ The GTZAN dataset is used for this classification task. It consists of 1000 audi
 - Rock
 
 ## Usage
-1. Extract the dataset into the `data` folder.
-2. If using Google Colab, mount your drive:
-   ```python
-   from google.colab import drive
-   drive.mount('/content/drive')
-   ```
-3. Run the `music_genre_classifier.ipynb` Jupyter Notebook to train and test the classifier.
-4. To save the model in `.h5` format, use the following steps in your notebook:
-   ```python
-   import os
-   import tensorflow as tf
-   from tensorflow import keras
-   import tensorflow.keras.models as models
+1. **Download and Extract the Dataset:**
+   - Download the GTZAN dataset from [Kaggle](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification?resource=download).
+   - Extract the dataset into the `data` folder.
 
-   # Save the model in HDF5 format
-   models.save_model(model, '/content/drive/MyDrive/saved_models/music_cnn.h5')
-   ```
-5. 
+2. **Training the Classifier:**
+   - If using Google Colab, mount your drive:
+     ```python
+     from google.colab import drive
+     drive.mount('/content/drive')
+     ```
+   - Run the `music_genre_classifier.ipynb` Jupyter Notebook to train and test the classifier.
+
+3. **Saving the Model:**
+   - To save the trained model in `.h5` format, use the following steps in your notebook:
+     ```python
+     import os
+     import tensorflow as tf
+     from tensorflow import keras
+     import tensorflow.keras.models as models
+
+     # Save the model in HDF5 format
+     models.save_model(model, '/content/drive/MyDrive/saved_models/music_cnn.h5')
+     ```
+
+4. **Testing with New Data:**
+   - To test with a new audio file:
+     - Install required packages:
+       ```bash
+       pip install gradio
+       pip install keras
+       ```
+     - Run `new_data.ipynb`. It will generate a link to the Gradio interface.
+     - In the Gradio interface, upload a `.wav` file of 30 seconds duration to get its predicted genre and distribution.
 
 ## Requirements
 - Python 3.x
@@ -47,11 +62,9 @@ The GTZAN dataset is used for this classification task. It consists of 1000 audi
 - Matplotlib
 - Scikit-learn
 - Librosa
-
+- Gradio
+- Tensorflow
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-
-Feel free to customize this README further with additional information about your classifier, how to interpret the results, or any other details you find relevant for users of your repository.
