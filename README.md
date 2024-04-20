@@ -1,7 +1,6 @@
-
 # Music Genre Classifier
 
-This repository contains a Music Genre Classifier built using the GTZAN dataset. The dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification?resource=download){:target="_blank"}.
+This repository contains a Music Genre Classifier built using the GTZAN dataset. The dataset can be downloaded from <a href="https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification?resource=download" target="_blank">Kaggle</a>.
 
 ## Overview
 Music Genre Classification is a fundamental task in the field of music information retrieval. This project aims to classify audio tracks into one of ten genres: Blues, Classical, Country, Disco, Hip-Hop, Jazz, Metal, Pop, Reggae, and Rock. The GTZAN dataset, with 1000 audio tracks each 30 seconds long, sampled at 22050Hz, serves as the foundation for this classifier.
@@ -25,7 +24,7 @@ The GTZAN dataset is used for this classification task. It consists of 1000 audi
 
 ## Usage
 1. **Download and Extract the Dataset:**
-   - Download the GTZAN dataset from [Kaggle](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification?resource=download){:target="_blank"}.
+   - Download the GTZAN dataset from [Kaggle](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification?resource=download) (opens in new tab).
    - Extract the dataset into the `data` folder.
 
 2. **Training the Classifier:**
@@ -73,4 +72,3 @@ The GTZAN dataset is used for this classification task. It consists of 1000 audi
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
