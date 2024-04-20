@@ -1,3 +1,4 @@
+
 # Music Genre Classifier
 
 This repository contains a Music Genre Classifier built using the GTZAN dataset. The dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification?resource=download){:target="_blank"}.
@@ -34,7 +35,7 @@ The GTZAN dataset is used for this classification task. It consists of 1000 audi
      drive.mount('/content/drive')
      ```
    - Run the `music_genre_classifier.ipynb` Jupyter Notebook to train and test the classifier.
-   - data_10.json file will be generated which has mfcc values, mapping and labels of genres.
+   - `data_10.json` file will be generated which has MFCC values, mapping, and labels of genres.
 
 3. **Saving the Model:**
    - To save the trained model in `.h5` format, use the following steps in your notebook:
@@ -55,7 +56,7 @@ The GTZAN dataset is used for this classification task. It consists of 1000 audi
        pip install gradio
        pip install keras
        ```
-     - Upload mapping.json file to colab
+     - Upload `mapping.json` file to Colab.
      - Run `new_data.ipynb`. It will generate a link to the Gradio interface.
      - In the Gradio interface, upload a `.wav` file of 30 seconds duration to get its predicted genre and distribution.
 
@@ -72,3 +73,4 @@ The GTZAN dataset is used for this classification task. It consists of 1000 audi
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
